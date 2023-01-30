@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body{
+    background-image: radial-gradient(circle at 50% -20.71%, #38e8cd 0, #3dead3 10%, #a7fff4 20%, #8dfff3 30%, #6cfbf2 40%, #3cf2f2 50%, #00e8f3 60%, #00dff5 70%, #00d6f9 80%, #00cefd 90%, #00c6ff 100%);
+}
+
+nav{
+    width: 100%;
+    color:rgb(4, 104, 244);
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    height: 100%;
+    padding: 50px;
+}
+
+.img{
+    width: 130px;
+
+}
+
+form{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 800px;
+    height: 400px;
+    
+}
+
+form input{
+    text-align: center;
+    width: 600px;
+    height: 50px;
+    color: rgb(9, 83, 202);
+    border-radius: 10px;
+}
+
+form button{
+    margin: auto;
+    display: block;
+    margin-top: 100px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: dodgerblue;
+    background-color: yellow;
+    padding: 20px;
+    pointer-events: painted;
+}
+
+.btn:hover{
+    background-color:dodgerblue;
+    color: white;
+}
+
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: yellow;
+}
+
+span{
+    color: #0390b8;
+}
+
+.container{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.img_video{
+    border-radius: 40px;
+    border: solid yellow;
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: yellow;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+.social-icons{
+    margin-top:30px ;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: aqua;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #0999f2;
+    transform: translateY(-5px);
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #505050;
+    font-weight: 300;
+    margin-top:30px ;
+    color: white;
+}
+
+.copyright i{
+    color: aqua;
+}

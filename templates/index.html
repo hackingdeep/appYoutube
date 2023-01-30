@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2bbc43c7fe.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/estilo.css' ) }}">
+</head>
+<body>
+
+    <nav>
+      
+        <img  class="img" src="/static/img/icons8-python-100.png ">
+        
+    </nav>
+
+ 
+ <div class="container">  
+ {% if request.method == 'POST' %}
+     
+        <img class="img_video" src="{{video.thumbnail_url}}"  width="300px">
+        <h3 class="titulo">Video descargado: {{video.title}}</h3>
+   
+ {% endif %}
+</div>
+
+     <h1>Descargar videos<span> de YouTube</span> </h1>
+    <form action="{{ url_for('descargar' ) }}" method="post">
+        <input type="text" name="url" required placeholder="URL">
+        <button type="submit" download  class="btn">  Descarga Mp4</button>
+    </form>
+  
+    
+
+    <div class="copyright">
+    <div class="social-icons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+    </div>
+        <p>Copyright © Rhanzess. <i class="fa-solid fa-heart"></i></p>
+    </div>
+
+</body>
+</html>
